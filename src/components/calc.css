@@ -1,0 +1,86 @@
+.cbody{
+    height: auto;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.493);
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 15px;
+}
+.form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0 auto;
+    height: 30%;
+}
+.values, .result{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    height: 5rem;
+    text-align: right;
+    max-width: 100%;
+    padding: 0;
+    font-size: 2rem;
+}
+.values{
+    border-bottom: 1px solid rgb(24, 24, 24);
+    border-radius: 15px 15px 0 0;
+}
+.values:focus, .result:focus{
+    outline-style: none;
+}
+
+.buttons{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 70%;
+}
+.btn-n{
+    height: 5rem;
+    width: 5rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.btn-n:hover{
+    background: #E23E57;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+
+}
+.numbers{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    border-radius: 0 0 15px 15px; 
+}
+.equal{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: #E23E57;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+.equal:hover{
+    background-color: #88304E;
+    transition-duration: 1s;
+}
+.operators{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 15px;
+    height: 5rem;
+    width: 95%;
+    margin: 10px auto;
+}
+
